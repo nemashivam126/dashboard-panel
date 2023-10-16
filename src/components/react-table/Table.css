@@ -1,0 +1,39 @@
+.table-top {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 16px 0pc 16px;
+}
+th {
+    font-size: 13px;
+    color: lightgray !important;
+}
+.input-search {
+    border: transparent;
+    color: #aba6a6;
+    background-color: #F5F6F8;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 5px;
+}
+::placeholder{
+    color: #aba6a6;
+    font-weight: 500;
+}
+input:focus-visible {
+    outline: #aba6a6;
+}
+select:focus-visible {
+    outline: #aba6a6;
+}
+@media only screen and (max-width: 600px) {
+    .table-top {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .input-search {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,20 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.greeting {
+  width: 100%;
+}
+input {
+    border: transparent;
+    padding: 5px;
+}
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        flex-wrap: wrap;
+    }
+    input {
+        width: 100%;
+    }
+}

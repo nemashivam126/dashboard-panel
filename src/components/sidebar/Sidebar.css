@@ -1,0 +1,149 @@
+/* Sidebar.css */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(4, 4, 64);
+  overflow-x: hidden;
+  transition: 0.5s;
+  /* padding-top: 60px; */
+  z-index: 1;
+  overflow: hidden;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 15px 20px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin: 0px 15px;
+}
+
+.sidebar li:hover {
+  background-color: rgb(45, 45, 105);
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.sidebar .toggle-button {
+  font-size: 18px; /* Adjust the font size for better visibility on mobile */
+  position: fixed;
+  left: 5px;
+  top: 5px;
+  background: transparent;
+  border: none;
+  color: grey;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.sidebar .toggle-arrow {
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: rgb(164, 164, 190);
+}
+
+.sidebar .toggle-arrow.down {
+  transform: rotate(90deg);
+}
+
+.sidebar .bottom-section {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  background-color: rgb(4, 4, 64);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  /* transform: translateY(100%); */
+}
+
+.sidebar.open .bottom-section {
+  transform: translateY(0);
+}
+
+.sidebar .bottom-section .username {
+  cursor: pointer;
+}
+
+.sidebar .bottom-section .username:hover {
+  text-decoration: none;
+}
+
+.downItem {
+  display: flex;
+  align-items: center;
+}
+.downItem p {
+  margin: auto;
+  margin-left: 10px;
+}
+.downItem .evano {
+  font-weight: 500;
+  color: white;
+}
+.downItem .pm {
+  font-size: 11px;
+}
+
+.propic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 0;
+  }
+
+  .sidebar .toggle-button {
+    opacity: 1; /* Make it visible on smaller screens */
+  }
+
+  .sidebar.open {
+    width: 250px;
+  }
+  .sidebar .bottom-section {
+    transform: translateY(100%);
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .sidebar {
+    width: 0;
+  }
+
+  .sidebar .toggle-button {
+    opacity: 1; /* Make it visible on smaller screens */
+  }
+
+  .sidebar.open {
+    width: 250px;
+  }
+  .sidebar .bottom-section {
+    transform: translateY(100%);
+  }
+}
