@@ -25,7 +25,7 @@ function Card() {
             </div>
           </div>
         </div>
-        <div className="col-sm-3">
+        <div className="col-sm-3 mb-3">
           <div className="card p-3">
             <div className="row g-0">
               <div className="col-md-6">
@@ -47,7 +47,7 @@ function Card() {
             </div>
           </div>
         </div>
-        <div className="col-sm-3">
+        <div className="col-sm-3 mb-3">
           <div className="card p-3">
             <div className="row g-0">
               <div className="col-md-6">
