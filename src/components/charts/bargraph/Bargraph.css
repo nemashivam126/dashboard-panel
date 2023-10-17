@@ -16,3 +16,9 @@
     color: lightgray;
     font-weight: 500;
 }
+
+@media only screen and (max-width: 600px){
+    .selectclass {
+        width: 35% !important;
+    }
+}

@@ -21,7 +21,7 @@ const Bargraph = () => {
     <div className='barchart'>
       <div className='d-flex justify-content-between align-items-center'>
         <h5><b>Overview</b></h5>
-        <select className='input-search me-4'>
+        <select className='input-search selectclass me-4'>
             <option>Quaterly</option>
         </select>
       </div>
