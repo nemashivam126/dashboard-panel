@@ -23,7 +23,7 @@ root.render(
       <div className="p-0 left-main-wrapper">
         <Sidebar />
       </div>
-      <div className="right-main-wrapper">
+      <div className="right-main-wrapper" style={{ width: '50vw' }}>
         <div><Navbar /></div>
         <div className="card-wrapper">
           <Card />
